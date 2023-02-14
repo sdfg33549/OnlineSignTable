@@ -26,7 +26,7 @@ $( "#event_date" ).keyup(function() {
 //*generate pdf
 
 function generatePDF() {
-  $("#sign_table").removeClass("mqcss");
+  // $("#sign_table").removeClass("mqcss");
   const rootNode = document.querySelector("#sign_table")
   const opt = {
     // margin: 10,
@@ -36,6 +36,7 @@ function generatePDF() {
       scale: 4, // 與畫面清晰度相關,
       useCORS: true,
       height: 1200,
+      windowWidth: 1024
     }
   }
    
@@ -183,7 +184,7 @@ $("#editTable").click(function(){
     }
   }, false);
 
-  
+
 
   (function drawLoop() {
     requestAnimFrame(drawLoop);
