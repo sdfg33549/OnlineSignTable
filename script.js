@@ -167,30 +167,23 @@ $("#editTable").click(function(){
 
   // Prevent scrolling when touching the canvas
 
-  // document.body.addEventListener("touchstart", function(e) {
-  //   if (e.target == canvas) {
-  //     e.preventDefault();
-  //   }
-  // }, false);
-  // document.body.addEventListener("touchend", function(e) {
-  //   if (e.target == canvas) {
-  //     e.preventDefault();
-  //   }
-  // }, false);
-  // document.body.addEventListener("touchmove", function(e) {
-  //   if (e.target == canvas) {
-  //     e.preventDefault();
-  //   }
-  // }, false);
-  document.getElementById( "sig-canvas" ).onwheel = function(event){
-    event.preventDefault();
-};
+  document.body.addEventListener("touchstart", function(e) {
+    if (e.target == canvas) {
+      e.preventDefault();
+    }
+  }, false);
+  document.body.addEventListener("touchend", function(e) {
+    if (e.target == canvas) {
+      e.preventDefault();
+    }
+  }, false);
+  document.body.addEventListener("touchmove", function(e) {
+    if (e.target == canvas) {
+      e.preventDefault();
+    }
+  }, false);
 
-document.getElementById( "sig-canvas" ).onmousewheel = function(event){
-    event.preventDefault();
-};
-
-
+  
 
   (function drawLoop() {
     requestAnimFrame(drawLoop);
