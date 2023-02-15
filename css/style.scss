@@ -83,7 +83,7 @@ body{
         border: none;
         // border-bottom: 1px solid #000;
         text-align: center;
-        width: 10%;
+        width: 12%;
         font-size: 18px;
         color: #df7100;
       }
@@ -323,11 +323,11 @@ body{
   .bottom{
     display: none;
   }
-  // .container .content .event{
-  //   width: 100%;
-  // }
-  // .container .content .table_box{
-  //   width: 100%;
-  // }
+  .container .content .event{
+    width: 90% !important;
+  }
+  .container .content .table_box{
+    width: 90% !important;
+  }
 
 }
