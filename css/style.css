@@ -160,7 +160,8 @@ body {
   border: 2px dotted #CCCCCC;
   border-radius: 15px;
   cursor: crosshair;
-  max-width: 100%; }
+  max-width: 100%;
+  margin-top: 40px; }
 
 #sig-dataUrl {
   display: none; }
@@ -228,5 +229,18 @@ body {
     width: 100%; }
   .mqcss #signCreate {
     width: 90%; } }
+@media print {
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important; }
+
+  .bottom {
+    display: none; }
+
+  .container .content .event {
+    width: 100%; }
+
+  .container .content .table_box {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
