@@ -36,7 +36,7 @@ function generatePDF() {
       scale: 4, // 與畫面清晰度相關,
       useCORS: true,
       height: 1200,
-      windowWidth: 1024
+      // windowWidth: 1024
     }
   }
    
@@ -221,15 +221,15 @@ $("#editTable").click(function(){
     var inputform = document.querySelector(".sign_input")
     inputform.style.display = 'none';
     var dataNew = []
-    var dp = document.querySelector('#department').value
-    var dpnum = document.querySelector('#dpnum').value
+    // var dp = document.querySelector('#department').value
+    // var dpnum = document.querySelector('#dpnum').value
     var name = document.querySelector('#visitor_name').value
     var worknum = document.querySelector('#worknum').value
 
     console.log(dataNew);
-    if (name !== '' && dpnum !== '' && worknum!== '') {
-      dataNew.push(dp)
-      dataNew.push(dpnum)
+    if (name !== '') {
+      // dataNew.push(dp)
+      // dataNew.push(dpnum)
       dataNew.push(name)
       dataNew.push(worknum)
       // dataNew.appendChild(sigImage)
@@ -270,12 +270,12 @@ $("#editTable").click(function(){
   });
   signIn_btn.addEventListener('click', () => {
     clearCanvas();
-    var dp = document.querySelector('#department')
-    var dpnum = document.querySelector('#dpnum')
+    // var dp = document.querySelector('#department')
+    // var dpnum = document.querySelector('#dpnum')
     var name = document.querySelector('#visitor_name')
     var worknum = document.querySelector('#worknum')
-    dp.value = "";
-    dpnum.value = "";
+    // dp.value = "";
+    // dpnum.value = "";
     name.value = "";
     worknum.value = "";
   });
