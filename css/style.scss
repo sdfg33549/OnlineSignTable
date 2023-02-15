@@ -88,7 +88,7 @@ body{
         color: #df7100;
       }
       #event_name{
-        min-width: 65%;
+        min-width: 50%;
         text-align: left;
         padding-left: 10px;
       }
@@ -310,20 +310,24 @@ body{
 }
 
 @media print{
+  @page {
+    size: A4;
+    margin: 0;
+  }
   body{
-
     -webkit-print-color-adjust:exact !important;
     print-color-adjust:exact !important;
-
+    width: 210mm;
+    height: 100%;
   }
   .bottom{
     display: none;
   }
-  .container .content .event{
-    width: 100%;
-  }
-  .container .content .table_box{
-    width: 100%;
-  }
+  // .container .content .event{
+  //   width: 100%;
+  // }
+  // .container .content .table_box{
+  //   width: 100%;
+  // }
 
 }
